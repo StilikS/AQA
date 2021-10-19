@@ -5,17 +5,17 @@
         static void Main(string[] args)
         {
             //example 1
-            /*var overload = new Overload();
+            var overload = new Overload();
             overload.DisplayOverload(100);
             overload.DisplayOverload("metod overloading");
-            overload.DisplayOverload("metod overloading", 100);*/
+            overload.DisplayOverload("metod overloading", 100);
             
             //example2 
-            /*var overland = new Overload();
+           /* var overland = new Overload();
             overland.Display();*/
             
             //examole 3
-           /* ClassA a = new ClassA();
+            /*ClassA a = new ClassA();
             a.Display1();*/
             
             //examole 4
@@ -30,10 +30,10 @@
             }*/
             
             //Example 6
-            ClassA classA = new ClassC();
+            /*ClassA classA = new ClassC();
             ClassB classB = new ClassC();
             classA.XXX();
-            classB.XXX();
+            classB.XXX();*/
         }
     }
 }
