@@ -1,4 +1,4 @@
-﻿/*using System;
+﻿using System;
 namespace Ex2AQA
 {
     partial class ClassA{}
@@ -14,4 +14,4 @@ namespace Ex2AQA
             Console.WriteLine("ClassB Display2");
         }
     }
-}*/
+}

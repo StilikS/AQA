@@ -1,4 +1,4 @@
-﻿/*using System;
+﻿using System;
 namespace Ex2AQA
 {
     partial class ClassA : ClassB
@@ -9,4 +9,4 @@ namespace Ex2AQA
             base.Display1();
         }
     }
-}*/
+}

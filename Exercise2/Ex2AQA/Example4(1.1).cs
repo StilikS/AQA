@@ -1,7 +1,7 @@
 ﻿/*using System;
 namespace Ex2AQA
 {
-    class ClassB
+    class ClassB1
     {
         public int x = 100;
         public void Display1()

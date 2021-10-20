@@ -1,26 +1,36 @@
 ﻿using System;
+
 namespace Ex2AQA
 {
     public class Encapsulation
     {
         private int age;
-        public int Age
+        public int SetAge
         {
-            get
-            {
-                return age;
-            }
             set
             {
-                if (value >= 0 && value <= 100)
-                {
-                    age = value;
-                }
-                else
-                {
-                    Console.WriteLine("error");
-                }
+                age = value;
+                IfAge();
             }
+        }
+        private void IfAge()
+        {
+            if (age >= 0 && age <= 100)
+            {
+                GetAge();
+            }
+            else
+            {
+                Error();
+            }
+        }
+        public void GetAge()
+        {
+            Console.WriteLine("Accepted");
+        }
+        public void Error()
+        {
+            Console.WriteLine("Error");
         }
     }
 }

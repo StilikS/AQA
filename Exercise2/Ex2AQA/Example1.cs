@@ -1,4 +1,4 @@
-﻿/*using System;
+﻿using System;
 
 namespace Ex2AQA
 {
@@ -27,6 +27,6 @@ namespace Ex2AQA
         }
         public void DisplayOverload(ref int a) {}
         public void DisplayOverload(int a, string a) {}
-        public void Display(int a) {string a}
+        public void Display(int a) {string a}*/
     }
-} */
+} 
