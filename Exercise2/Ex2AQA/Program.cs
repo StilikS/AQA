@@ -34,9 +34,13 @@ namespace Ex2AQA
             classA.XXX();
             classB.XXX();*/
             //encapsulation
-            Encapsulation Encapsulation = new Encapsulation();
+            Encapsulation1 encapsulation = new Encapsulation1();
             Console.WriteLine("Write your age: ");
-            Encapsulation.SetAge = int.Parse(Console.ReadLine());
+            encapsulation.Age = int.Parse(Console.ReadLine());
+            
+            
+            
+            
         }
     }
 }
