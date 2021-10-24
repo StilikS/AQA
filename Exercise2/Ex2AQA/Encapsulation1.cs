@@ -10,10 +10,9 @@ namespace Ex2AQA
             get { return age; }
             set
             {
-                if (age <= 0 && age <= 100) throw new ArgumentException("Value should be positive");
-                age= value;
+                if (value <= 0) throw new ArgumentException("Value should be positive");
+                age = value;
             }
-
         }
     }
 }
