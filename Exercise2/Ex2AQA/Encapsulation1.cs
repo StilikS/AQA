@@ -1,5 +1,4 @@
 ﻿using System;
-
 namespace Ex2AQA
 {
     public class Encapsulation1
@@ -13,7 +12,6 @@ namespace Ex2AQA
                 if (age <= 0) throw new ArgumentException("Value should be positive");
                 age= value;
             }
-
         }
     }
 }
