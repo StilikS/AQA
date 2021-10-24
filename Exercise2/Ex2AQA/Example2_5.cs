@@ -1,7 +1,7 @@
 ﻿/*using System;
 namespace Ex2AQA
 {
-    public class Example2_5_
+    public class Example2_5
     {
         public class Overload
         {

@@ -1,7 +1,7 @@
 ﻿/*using System;
 namespace Ex2AQA
 {
-    public class ClassA
+    public class Example6_1_1
     {
         public virtual void XXX()
         {

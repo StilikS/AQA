@@ -1,7 +1,7 @@
 ﻿/*using System;
 namespace Ex2AQA
 {
-    public class Overload
+    public class Example2_3
     {
         public void Display()
         {

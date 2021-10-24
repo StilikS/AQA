@@ -2,7 +2,7 @@
 
 namespace Ex2AQA
 {
-    class Overload
+    class Example1
     {
         public void DisplayOverload(int a)
         {

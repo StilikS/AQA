@@ -1,7 +1,7 @@
 ﻿/*using System;
 namespace Ex2AQA
 {
-    class Overload
+    class Example2_1
     {
         private string name = "Akhil";
         public void Display()
