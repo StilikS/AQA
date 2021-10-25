@@ -4,25 +4,23 @@ namespace Exercise3.Domain
 {
     class Candidate : Person
     {
-        enum DismissalReason
+        public DismissalReason dismissalReason;
+
+
+
+
+
+        /*public string[] Qwer()
         {
-            FamilyReasons,
-            ProfessionalGrowthLack,
-            LowSalary,
-            BadTeamMicroclimate,
-            LackManagementUnderstanding,
-            Other
-        }
+            foreach(DismissalReason foo in Enum.GetValues(typeof(DismissalReason)))
+        }/*
         
-        DismissalReason [] dismissalReasonArray = (DismissalReason[])Enum.GetValues(typeof(DismissalReason));
-
-
-
-        public void Qwer()
-        {
+        
+        
+        /*{
             var values = Enum.GetValues(typeof(DismissalReason));
-            Console.WriteLine(values);
-        }
+            
+        }*/
             
          
 

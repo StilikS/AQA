@@ -1,4 +1,4 @@
-﻿/*using System;
+﻿using System;
 namespace Ex2AQA
 {
     public class Example2_3
@@ -8,7 +8,7 @@ namespace Ex2AQA
             DisplayOverload(100, "200", "300");
             DisplayOverload(200, "100");
             string[] names = {"Akhil", "Ekta", "Arsh"};
-            DisplayOverload(200, names, "Ahile");
+            DisplayOverload(200, names);
         }
         private void DisplayOverload(int a, params string[] parameterArray)
         {
@@ -16,4 +16,4 @@ namespace Ex2AQA
                 Console.WriteLine(i + " " + a);
         }
     }
-}*/
+}

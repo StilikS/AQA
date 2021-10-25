@@ -54,8 +54,6 @@ namespace Exercise3.Domain
              }
              return сityList;
          }
-
-
          public string CompanyAddress()
          {
              string companyAddress = new Bogus.DataSets.Address().FullAddress();

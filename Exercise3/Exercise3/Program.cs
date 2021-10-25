@@ -3,14 +3,26 @@ using Exercise3.Domain;
 
 namespace Exercise3
 {
+    enum DismissalReason
+    {
+        FamilyReasons,
+        ProfessionalGrowthLack,
+        LowSalary,
+        BadTeamMicroclimate,
+        LackManagementUnderstanding,
+        Other
+    }
     class Program
     {
         static void Main(string[] args)
         {
-            
-            
-            
-            
+            /*Candidate t = new Candidate();
+            Console.WriteLine(t);*/
+            /*foreach (DismissalReason foo in Enum.GetValues(typeof(DismissalReason))) ;*/
+
+
+
+
             /*Person id = new Person();
             Console.WriteLine(id.CreateId());
             

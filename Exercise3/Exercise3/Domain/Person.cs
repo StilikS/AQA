@@ -7,13 +7,15 @@ namespace Exercise3.Domain
 
     {
         private int count;
+        private string[] idList;
+        private string[] firstNList;
+        private string[] lastNList;
+        private string[] salaryList;
+        private string[] descriptionList;
+        private string[] titleList;
         
-        public int Count()
-        {
-            return count;
-        }
 
-        public int GetPersonsCount()
+        public int Count()
         {
             Random rnd = new Random();
             count = rnd.Next(10, 15);
@@ -25,21 +27,24 @@ namespace Exercise3.Domain
             string id = Guid.NewGuid().ToString();
             return id;
         }
-        public string[] CreateIdList() 
+
+        public string[] CreateIdList()
         {
             string[] idList = new string[count];
             for (int i = 0; i <= idList.Length; i++)
             {
                 idList[i] = CreateId();
             }
+
             return idList;
         }
-        
+
         public string CreateFirstName()
         {
             string firstName = new Bogus.DataSets.Name().FirstName();
             return firstName;
         }
+
         public string[] CreateFNList()
         {
             string[] firstNList = new string[count];
@@ -47,14 +52,16 @@ namespace Exercise3.Domain
             {
                 firstNList[i] = CreateFirstName();
             }
+
             return firstNList;
         }
-        
+
         public string CreateLastName()
         {
             string lastName = new Bogus.DataSets.Name().LastName();
             return lastName;
         }
+
         public string[] CreateLNList()
         {
             string[] lastNList = new string[count];
@@ -66,31 +73,32 @@ namespace Exercise3.Domain
             return lastNList;
         }
 
-        
+
         public string CreateJobSalary()
         {
             var Salary = new Faker();
             string jobSalary = Convert.ToString(Salary.Random.Number(300, 2000));
             return jobSalary;
         }
+
         public string[] CreateJSalaryList()
         {
             string[] salaryList = new string[count];
             for (int i = 0; i < salaryList.Length; i++)
             {
-               salaryList[i] = CreateJobSalary();
+                salaryList[i] = CreateJobSalary();
             }
 
             return salaryList;
         }
 
-        
         public string CreateJobDescription()
         {
             string jobDescription = new Bogus.DataSets.Name().JobDescriptor();
             return jobDescription;
         }
-        public string[]  CreateJDescriptionList()
+
+        public string[] CreateJDescriptionList()
         {
             string[] descriptionList = new string[count];
             for (int i = 0; i < descriptionList.Length; i++)
@@ -101,21 +109,28 @@ namespace Exercise3.Domain
             return descriptionList;
         }
 
-        
         public string CreateJobTitle()
         {
             string jobTitle = new Bogus.DataSets.Name().JobTitle();
             return jobTitle;
         }
-        public string[]  CreateJTitleList()
+
+        public string[] CreateJTitleList()
         {
             string[] titleList = new string[count];
             for (int i = 0; i < titleList.Length; i++)
             {
-                titleList[i] = CreateJobSalary();
+                titleList[i] = CreateJobTitle();
             }
+
             return titleList;
         }
-    }
-}
 
+        
+
+        public void FullName()
+        {
+            string[] dfsfs = firstNList + lastNList;
+        }
+    }
+}    

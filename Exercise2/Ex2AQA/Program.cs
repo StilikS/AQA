@@ -13,8 +13,8 @@ namespace Ex2AQA
             overload.DisplayOverload("metod overloading");
             overload.DisplayOverload("metod overloading", 100);
             //Example 2 
-             /*var overland = new Example2_4();
-             overland.Display();*/
+             var overland = new Example2_3();
+             overland.Display();
             //Example 3
             Example3 a = new Example3();
             a.Display1();
