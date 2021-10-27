@@ -3,134 +3,29 @@ using Bogus;
 
 namespace Exercise3.Domain
 {
-    class Person
-
+    public class Person
     {
-        private int count;
-        private string[] idList;
-        private string[] firstNList;
-        private string[] lastNList;
-        private string[] salaryList;
-        private string[] descriptionList;
-        private string[] titleList;
-        
-
-        public int Count()
+        public string Id {get; set; }
+        public string FirstName {get; set;}
+        public string LastName{get; set;}
+        public string JobTitle{get; set;}
+        public string JobSalary{get; set;}
+        public string JobDescription{get; set;}
+        private string fullName;
+        public string FullName
         {
-            Random rnd = new Random();
-            count = rnd.Next(10, 15);
-            return count;
-        }
-
-        public string CreateId()
-        {
-            string id = Guid.NewGuid().ToString();
-            return id;
-        }
-
-        public string[] CreateIdList()
-        {
-            string[] idList = new string[count];
-            for (int i = 0; i <= idList.Length; i++)
+            get
             {
-                idList[i] = CreateId();
+                return fullName;
             }
-
-            return idList;
-        }
-
-        public string CreateFirstName()
-        {
-            string firstName = new Bogus.DataSets.Name().FirstName();
-            return firstName;
-        }
-
-        public string[] CreateFNList()
-        {
-            string[] firstNList = new string[count];
-            for (int i = 0; i < firstNList.Length; i++)
+            set
             {
-                firstNList[i] = CreateFirstName();
+                FullName = $"{FirstName} {LastName}";
             }
-
-            return firstNList;
         }
-
-        public string CreateLastName()
+        /*public Person(string FirstName, string LastName)
         {
-            string lastName = new Bogus.DataSets.Name().LastName();
-            return lastName;
-        }
-
-        public string[] CreateLNList()
-        {
-            string[] lastNList = new string[count];
-            for (int i = 0; i < lastNList.Length; i++)
-            {
-                lastNList[i] = CreateLastName();
-            }
-
-            return lastNList;
-        }
-
-
-        public string CreateJobSalary()
-        {
-            var Salary = new Faker();
-            string jobSalary = Convert.ToString(Salary.Random.Number(300, 2000));
-            return jobSalary;
-        }
-
-        public string[] CreateJSalaryList()
-        {
-            string[] salaryList = new string[count];
-            for (int i = 0; i < salaryList.Length; i++)
-            {
-                salaryList[i] = CreateJobSalary();
-            }
-
-            return salaryList;
-        }
-
-        public string CreateJobDescription()
-        {
-            string jobDescription = new Bogus.DataSets.Name().JobDescriptor();
-            return jobDescription;
-        }
-
-        public string[] CreateJDescriptionList()
-        {
-            string[] descriptionList = new string[count];
-            for (int i = 0; i < descriptionList.Length; i++)
-            {
-                descriptionList[i] = CreateJobDescription();
-            }
-
-            return descriptionList;
-        }
-
-        public string CreateJobTitle()
-        {
-            string jobTitle = new Bogus.DataSets.Name().JobTitle();
-            return jobTitle;
-        }
-
-        public string[] CreateJTitleList()
-        {
-            string[] titleList = new string[count];
-            for (int i = 0; i < titleList.Length; i++)
-            {
-                titleList[i] = CreateJobTitle();
-            }
-
-            return titleList;
-        }
-
-        
-
-        public void FullName()
-        {
-            string[] dfsfs = firstNList + lastNList;
-        }
+           FullName = $"{FirstName} {LastName}";
+        }*/
     }
 }    
