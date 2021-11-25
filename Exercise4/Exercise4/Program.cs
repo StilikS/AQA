@@ -55,18 +55,17 @@ namespace Exercise4
                 else
                     qu.Enqueue(b);
             }
-            int[] gh = qu.ToArray();
+            /*int[] gh = qu.ToArray();
             for (var i = 0; i < gh.Length; i++)
             {
-                if (i >= min && i <= max)
+                if (i >= minInd && i <= maxInd)
                     sum += gh[i];
-            }
-            /*c = qu.Dequeue();
+            }*/
+            /*var c = qu.Dequeue();
             if (c == max || c == min)
             {
                 sum += c;
                 qu2.Enqueue(c);
-                
             }
             else
                 qu2.Enqueue(c);*/
