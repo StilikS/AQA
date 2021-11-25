@@ -16,11 +16,10 @@ namespace Exercise3.Domain
     {
         public DismissalReason? DismissalReason = null;
 
-        public Candidate() /*(string FirstName, string LastName): base(FirstName, LastName)*/
-        {
-            
-        }
-
+        //public Candidate() /*(string FirstName, string LastName): base(FirstName, LastName)*/
+        //{
+        //}*/
+        
         public void ShowPersonInfo()
         {
             if (DismissalReason != null)

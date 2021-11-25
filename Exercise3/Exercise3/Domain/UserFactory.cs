@@ -6,14 +6,23 @@ namespace Exercise3.Domain
     {
         public Person GetInstance(Type type)
         {
-            if (type == typeof(Employee))
+            if (type == typeof(Employee) || type == typeof(Candidate))
             {
-                return new Employee();
+                if (type == typeof(Employee))
+                {
+                    return new Employee();
+                }
+                else
+                {
+                    return new Candidate();
+                }
             }
             else
-            {
-                return new Candidate();
+            { 
+                return null;
             }
         }
+       
+        
     }
 }

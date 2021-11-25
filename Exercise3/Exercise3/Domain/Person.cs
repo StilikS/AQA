@@ -5,7 +5,11 @@ namespace Exercise3.Domain
 {
     public class Person
     {
-        public string Id {get; set; }
+        public string CreateId()
+        {
+            string id = Guid.NewGuid().ToString();
+            return id;
+        }
         public string FirstName {get; set;}
         public string LastName{get; set;}
         public string JobTitle{get; set;}
