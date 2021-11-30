@@ -111,10 +111,11 @@ namespace Exercise4
                 Console.WriteLine(lperson);
             }
             //4
-            /*int []arr = {5, 9, 7, 6, 1, 3, 10};
-            BubbleSort(arr);
-            Console.WriteLine("Sorted array");
-            PrintArray(arr);*/
+            int []arr = {5, 9, 7, 6, 1, 3, 10};
+            var ew = new ClassA<int[]>();
+            Console.WriteLine(ew.BubbleSort());
+            
+
 
 
 

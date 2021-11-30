@@ -12,7 +12,7 @@
             e1 = e2;
             e2 = temp;
         }
-        static int[] BubbleSort(int[] array)
+        public static int[] BubbleSort(int[] array)
         {
             var len = array.Length;
             for (var i = 1; i < len; i++)

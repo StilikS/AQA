@@ -41,18 +41,18 @@ namespace Exercise3
             string companyAddress = new Bogus.DataSets.Address().FullAddress();*/
         }
 
-        static new Candidate [] generateCandidates()
+        /*static new Candidate [] generateCandidates()
         {
             return Candidate[count] = new Candidate();
             for (int i = 0; i <= Candidate.Length; i++)
             {
                 Candidate[] = $"{id}, {firstName} и тд";
             }
-        }
+        }*/
         
-        static Employee[] generateEmployees()
+        /*static Employee[] generateEmployees()
         {
             return new[] {new Employee()};
-        }
+        }*/
     }
 }

@@ -14,26 +14,24 @@ namespace Exercise4
             a = b;
             b = t;
         }
-        static int[] StoogeSort(int[] array, int startIndex, int endIndex)
+        public static int[] ShellSort(int[] array)
         {
-            if (array[startIndex] > array[endIndex])
+            var d = array.Length / 2;
+            while (d >= 1)
             {
-                Swap(ref array[startIndex], ref array[endIndex]);
-            }
+                for (var i = d; i < array.Length; i++)
+                {
+                    var j = i;
+                    while ((j >= d) && (array[j - d] > array[j]))
+                    {
+                        Swap(ref array[j], ref array[j - d]);
+                        j = j - d;
+                    }
+                }
 
-            if (endIndex - startIndex > 1)
-            {
-                var len = (endIndex - startIndex + 1) / 3;
-                StoogeSort(array, startIndex, endIndex - len);
-                StoogeSort(array, startIndex + len, endIndex);
-                StoogeSort(array, startIndex, endIndex - len);
+                d = d / 2;
             }
-
             return array;
-        }
-        static int[] StoogeSort(int[] array)
-        {
-            return StoogeSort(array, 0, array.Length - 1);
         }
 
     }
