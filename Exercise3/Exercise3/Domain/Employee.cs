@@ -21,7 +21,6 @@ namespace Exercise3.Domain
                 .RuleFor(o => o.Address, f => f.Name.JobTitle());
             _company = testCompany.Generate();
         }
-
         public void ShowPersonInfo()
         {
             Console.WriteLine($"Hello, I am {FullName}, {JobTitle} in {_company.Name} ({_company.Country}, {_company.City}, {_company.Address}) and my salary {JobSalary}.");

@@ -21,8 +21,6 @@ namespace Exercise5
             var B = new Shop();
             B.Info();
             Console.WriteLine(B.B);
-            
-               
         }
     }
 }

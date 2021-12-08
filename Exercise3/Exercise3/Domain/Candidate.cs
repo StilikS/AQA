@@ -12,7 +12,6 @@ namespace Exercise3.Domain
         Other,
         Null
     }
-
     public class Candidate : Person, IDisplayable
     { 
         private int dismissalReasonInt;

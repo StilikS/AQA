@@ -26,15 +26,11 @@ namespace Exercise3
                 person.ShowPersonInfo();
                 Console.WriteLine();
             }
-
             foreach (var person in candidates)
             {
                 person.ShowPersonInfo();
                 Console.WriteLine();
-            }
-
-            
-            
+            } 
         }
         
     }
