@@ -1,7 +1,7 @@
 ﻿namespace Exercise3.Domain
 {
-    public interface IDisplayable
+     interface IDisplayable
     {
-        void ShowPersonInfo();
+        public void ShowPersonInfo();
     }
 }

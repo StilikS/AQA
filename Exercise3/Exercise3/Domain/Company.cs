@@ -1,5 +1,6 @@
 ﻿using Bogus;
 using System;
+using System.Collections.Generic;
 
 namespace Exercise3.Domain
 {
@@ -9,5 +10,6 @@ namespace Exercise3.Domain
         public string Country {get; set;}
         public string City {get; set;}
         public string Address {get; set;}
+
     }
 }

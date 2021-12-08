@@ -8,7 +8,6 @@ namespace Exercise5
     {
         static void Main(string[] args)
         {
-            
             try
             {
                 var path = Path.Combine(Environment.CurrentDirectory, "info.json");
@@ -19,8 +18,11 @@ namespace Exercise5
             {
                 Console.WriteLine("Error");
             }
+            var B = new Shop();
+            B.Info();
+            Console.WriteLine(B.B);
             
-                
+               
         }
     }
 }
