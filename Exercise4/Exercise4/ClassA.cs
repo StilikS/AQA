@@ -1,6 +1,6 @@
 ﻿namespace Exercise4
 {
-    public class ClassA<T> : Inte
+    public class ClassA<T> : Interface
     {
         public void Sort1()
         {

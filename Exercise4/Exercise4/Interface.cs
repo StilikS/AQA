@@ -1,6 +1,6 @@
 ﻿namespace Exercise4
 {
-    public interface Inte
+    public interface Interface
     {
         void Sort1();
     }

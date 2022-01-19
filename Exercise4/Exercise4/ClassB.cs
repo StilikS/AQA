@@ -2,7 +2,7 @@
 
 namespace Exercise4
 {
-    public class ClassB<T> : Inte
+    public class ClassB<T> : Interface
     {
         public void Sort1()
         {
